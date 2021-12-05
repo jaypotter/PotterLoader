@@ -39,26 +39,29 @@ abstract class AbstractPsr4Autoloader extends AbstractAutoloader implements Psr4
         }
     }
     
-    private function loadMappedFile(string $prefix, string $relativeClass): void
+    private function loadMappedFile(string $prefix, string $relativeClass): bool
     {
         if (isset($this->prefixes[$prefix]) === false) {
-            return;
+            return false;
         }
         foreach ($this->prefixes[$prefix] as $baseDir) {
             $file = $baseDir
                   . str_replace('\\', '/', $relativeClass)
                   . '.php';
             if ($this->requireFile($file)) {
-                return;
+                return true;
             }
         }
+        return false;
     }
 
-    private function requireFile(string $file): void
+    private function requireFile(string $file): bool
     {
         if (file_exists($file)) {
             require $file;
+            return true;
         }
+        return false;
     }
 
 }
