@@ -1,6 +1,7 @@
 # PotterLoader
 PHP 8 Autoloader
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3d23951182a1428894edc76775e8a7b2)](https://app.codacy.com/gh/jaypotter/PotterLoader?utm_source=github.com&utm_medium=referral&utm_content=jaypotter/PotterLoader&utm_campaign=Badge_Grade_Settings)
 [![CodeFactor](https://www.codefactor.io/repository/github/jaypotter/potterloader/badge/main)](https://www.codefactor.io/repository/github/jaypotter/potterloader/overview/main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/)
 
