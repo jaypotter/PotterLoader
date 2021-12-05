@@ -1,9 +1,9 @@
 <?php
 
-namespace Potter\Spl\Autoload;
+namespace Potter\Autoload;
 
-require_once __DIR__ . '/../../Autoload/Autoloader/AutoloaderInterface.php';
-require_once __DIR__ . '/../../Autoload/Register/AbstractAutoloadRegister.php';
+require_once __DIR__ . '/Autoloader/AutoloaderInterface.php';
+require_once __DIR__ . '/Register/AbstractAutoloadRegister.php';
 
 use Potter\Autoload\{
     Autoloader\AutoloaderInterface,
