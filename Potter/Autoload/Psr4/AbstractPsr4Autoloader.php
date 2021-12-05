@@ -45,9 +45,7 @@ abstract class AbstractPsr4Autoloader extends AbstractAutoloader implements Psr4
             return false;
         }
         foreach ($this->prefixes[$prefix] as $baseDir) {
-            $file = $baseDir
-                  . str_replace('\\', '/', $relativeClass)
-                  . '.php';
+            $file = $baseDir . str_replace('\\', '/', $relativeClass) . '.php';
             if ($this->requireFile($file)) {
                 return true;
             }
