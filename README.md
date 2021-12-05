@@ -28,9 +28,9 @@ PHP 8 Autoloader
 require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
 require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
 
-use Potter\{
-    Autoload\Psr4\Psr4Autoloader,
-    Autoload\SplAutoloadRegister
+use Potter\Autoload\{
+    Psr4\Psr4Autoloader,
+    SplAutoloadRegister
 };
 
 $register = new SplAutoloadRegister;
