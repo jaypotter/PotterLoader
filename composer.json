@@ -1,0 +1,14 @@
+{
+    "name": "potter/loader",
+    "description": "PHP Autoloader",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jay Potter",
+            "email": "jay@jaypotter.ca"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}
