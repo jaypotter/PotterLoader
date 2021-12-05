@@ -8,5 +8,7 @@
             "email": "jay@jaypotter.ca"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.0"
+    }
 }
