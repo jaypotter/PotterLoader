@@ -10,11 +10,13 @@ PHP 8 Autoloader
 ## Structure
 
 ### Registers
+
 - AutoloadRegisterInterface (Potter\Autoload\Register)
   - AbstractAutoloadRegister (Potter\Autoload\Register)
     - **SplAutoloadRegister** (Potter\Autoload)
 
 ### Autoloaders
+
 - AutoloaderInterface (Potter\Autoload\Autoloader)
   - AbstractAutoloader (Potter\Autoload\Autoloader)
     - ClosureAutloaderInterface (Potter\Autoload\Closure)
@@ -27,6 +29,7 @@ PHP 8 Autoloader
         - **Psr4Autoloader** (Potter\Autoload\Psr4)
 
 ## Example
+
 ```
 <?php
 
