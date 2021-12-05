@@ -7,7 +7,7 @@ PHP 8 Autoloader
 ### Registers
 - AutoloadRegisterInterface (Potter\Autoload\Register)
   - AbstractAutoloadRegister (Potter\Autoload\Register)
-    - **SplAutoloadRegister** (Potter\Spl\Autoload)
+    - **SplAutoloadRegister** (Potter\Autoload)
 
 ### Autoloaders
 - AutoloaderInterface (Potter\Autoload\Autoloader)
@@ -26,11 +26,11 @@ PHP 8 Autoloader
 <?php
 
 require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
-require_once __DIR__ . '/Potter/Spl/Autoload/SplAutoloadRegister.php';
+require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
 
 use Potter\{
     Autoload\Psr4\Psr4Autoloader,
-    Spl\Autoload\SplAutoloadRegister
+    Autoload\SplAutoloadRegister
 };
 
 $register = new SplAutoloadRegister;
@@ -65,8 +65,8 @@ final class MyNamespaceAutoloader extends AbstractPsr4Autoloader
 ```
 <?php
 
-require_once __DIR__ . '/Potter/Spl/Autoload/SplAutoloadRegister.php';
-use Potter\Spl\Autoload\SplAutoloadRegister;
+require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
+use Potter\Autoload\SplAutoloadRegister;
 
 require_once __DIR__ . '/MyNamespaceAutoloader.php';
 use MyNamespace\MyNamespaceAutoloader;
