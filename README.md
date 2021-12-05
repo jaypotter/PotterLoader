@@ -8,6 +8,7 @@ PHP 8 Autoloader
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Structure
+
 ### Registers
 - AutoloadRegisterInterface (Potter\Autoload\Register)
   - AbstractAutoloadRegister (Potter\Autoload\Register)
