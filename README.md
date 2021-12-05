@@ -2,6 +2,7 @@
 PHP 8 Autoloader
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jaypotter/potterloader/badge/main)](https://www.codefactor.io/repository/github/jaypotter/potterloader/overview/main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/)
 
 ### Registers
 - AutoloadRegisterInterface (Potter\Autoload\Register)
