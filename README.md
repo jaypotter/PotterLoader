@@ -1,5 +1,5 @@
 # PotterLoader
-PHP Autoloader
+PHP 8 Autoloader
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jaypotter/potterloader/badge/main)](https://www.codefactor.io/repository/github/jaypotter/potterloader/overview/main)
 
