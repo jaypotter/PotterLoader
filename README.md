@@ -24,7 +24,6 @@ Roll Your Own PHP 8 Autoloader
         - ClosureAutoloaderTrait (Potter\Autoload\Closure)
           - **CallableAutoloader** (Potter\Autoload\Closure)
           - **ClosureAutoloader** (Potter\Autoload\Closure)
-
     - Psr4AutoloaderInterface (Potter\Autoload\Psr4)
       - AbstractPsr4Autoloader (Potter\Autoload\Psr4)
         - **Psr4Autoloader** (Potter\Autoload\Psr4)
