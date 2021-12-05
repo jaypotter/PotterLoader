@@ -11,13 +11,13 @@ PHP 8 Autoloader
 
 ### Registers
 
-- AutoloadRegisterInterface (Potter\Autoload\Register)
+  - AutoloadRegisterInterface (Potter\Autoload\Register)
     - AbstractAutoloadRegister (Potter\Autoload\Register)
       - **SplAutoloadRegister** (Potter\Autoload)
 
 ### Autoloaders
 
-- AutoloaderInterface (Potter\Autoload\Autoloader)
+  - AutoloaderInterface (Potter\Autoload\Autoloader)
     - AbstractAutoloader (Potter\Autoload\Autoloader)
       - ClosureAutloaderInterface (Potter\Autoload\Closure)
         - AbstractClosureAutoloader (Potter\Autoload\Closure)
