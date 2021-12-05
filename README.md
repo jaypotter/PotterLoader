@@ -31,7 +31,7 @@ PHP 8 Autoloader
 
 ## Example
 
-```
+```php
 <?php
 
 require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
@@ -51,7 +51,7 @@ new MyNamespace\UserClass;
 
 ### Roll Your Own Autoloader
 
-```
+```php
 <?php
 
 namespace MyNamespace;
@@ -71,7 +71,7 @@ final class MyNamespaceAutoloader extends AbstractPsr4Autoloader
 }
 ```
 
-```
+```php
 <?php
 
 require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
