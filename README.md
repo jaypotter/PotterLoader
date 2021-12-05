@@ -33,7 +33,44 @@ use Potter\{
 };
 
 $register = new SplAutoloadRegister;
-$autoloader = new Psr4Autoloader('MyNamespace', __DIR__ . '/MyNamespace');
-
+$autoloader = new Psr4Autoloader('MyNamespace', __DIR__);
 $register->register($autoloader);
+
+new MyNamespace\UserClass;
+```
+
+### Roll Your Own Autoloader
+
+```
+<?php
+
+namespace MyNamespace;
+
+require_once __DIR__ . '/Potter/Autoload/Psr4/AbstractPsr4Autoloader.php';
+
+use Potter\Autoload\Psr4\AbstractPsr4Autoloader;
+
+final class MyNamespaceAutoloader extends AbstractPsr4Autoloader
+{
+    private const PREPEND = true; 
+
+    public function __construct()
+    {
+        $this->addNamespace('MyNamespace', __DIR__, self::PREPEND);
+    }
+}
+```
+
+```
+<?php
+
+require_once __DIR__ . '/Potter/Spl/Autoload/SplAutoloadRegister.php';
+use Potter\Spl\Autoload\SplAutoloadRegister;
+
+require_once __DIR__ . '/MyNamespaceAutoloader.php';
+use MyNamespace\MyNamespaceAutoloader;
+
+(new SplAutoloadRegister)->register(new MyNamespaceAutoloader);
+
+new MyNamespace\UserClass;
 ```
