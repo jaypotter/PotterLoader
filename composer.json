@@ -1,6 +1,6 @@
 {
     "name": "potter/loader",
-    "description": "PHP Autoloader",
+    "description": "Roll Your Own PHP 8 Autoloader",
     "type": "library",
     "authors": [
         {
