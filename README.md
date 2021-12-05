@@ -19,3 +19,21 @@ PHP Autoloader
     - Psr4AutoloaderInterface (Potter\Autoload\Psr4)
       - AbstractPsr4Autoloader (Potter\Autoload\Psr4)
         - **Psr4Autoloader** (Potter\Autoload\Psr4)
+
+### Example
+```
+<?php
+
+require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
+require_once __DIR__ . '/Potter/Spl/Autoload/SplAutoloadRegister.php';
+
+use Potter\{
+    Autoload\Psr4\Psr4Autoloader,
+    Spl\Autoload\SplAutoloadRegister
+};
+
+$register = new SplAutoloadRegister;
+$autoloader = new Psr4Autoloader('MyNamespace', __DIR__ . '/MyNamespace');
+
+$register->register($autoloader);
+```
