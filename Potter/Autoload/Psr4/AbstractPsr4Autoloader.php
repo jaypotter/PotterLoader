@@ -23,7 +23,6 @@ abstract class AbstractPsr4Autoloader extends AbstractAutoloader implements Psr4
         } else {
             array_push($this->prefixes[$prefix], $baseDir);
         }
-        print_r($this->prefixes);
     }
 
     final public function loadClass(string $class): void
