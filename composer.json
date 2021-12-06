@@ -3,7 +3,7 @@
     "description": "Roll Your Own PHP 8 Autoloader",
     "license": "MIT",
     "type": "library",
-    "minimum-stability": "dev-main",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Jay Potter",
