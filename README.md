@@ -9,7 +9,7 @@ Roll Your Own PHP 8 Autoloader
 
 ## Installation
 
-```
+```bash
 composer require potter/loader
 ```
 
