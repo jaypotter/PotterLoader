@@ -1,6 +1,7 @@
 {
     "name": "potter/loader",
     "description": "Roll Your Own PHP 8 Autoloader",
+    "minimum-stability": "dev",
     "license": "MIT",
     "type": "library",
     "authors": [
