@@ -7,26 +7,11 @@ Roll Your Own PHP 8 Autoloader
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/jaypotter/PotterLoader/)
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Structure
+## Installation
 
-### Registers
-
-- AutoloadRegisterInterface (Potter\Autoload\Register)
-  - AbstractAutoloadRegister (Potter\Autoload\Register)
-    - **SplAutoloadRegister** (Potter\Autoload)
-
-### Autoloaders
-
-- AutoloaderInterface (Potter\Autoload\Autoloader)
-  - AbstractAutoloader (Potter\Autoload\Autoloader)
-    - ClosureAutloaderInterface (Potter\Autoload\Closure)
-      - AbstractClosureAutoloader (Potter\Autoload\Closure)
-        - ClosureAutoloaderTrait (Potter\Autoload\Closure)
-          - **CallableAutoloader** (Potter\Autoload\Closure)
-          - **ClosureAutoloader** (Potter\Autoload\Closure)
-    - Psr4AutoloaderInterface (Potter\Autoload\Psr4)
-      - AbstractPsr4Autoloader (Potter\Autoload\Psr4)
-        - **Psr4Autoloader** (Potter\Autoload\Psr4)
+```
+composer require potter/loader
+```
 
 ## Example
 
@@ -83,3 +68,24 @@ use MyNamespace\MyNamespaceAutoloader;
 
 new MyNamespace\UserClass;
 ```
+
+## Structure
+
+### Registers
+
+- AutoloadRegisterInterface (Potter\Autoload\Register)
+  - AbstractAutoloadRegister (Potter\Autoload\Register)
+    - **SplAutoloadRegister** (Potter\Autoload)
+
+### Autoloaders
+
+- AutoloaderInterface (Potter\Autoload\Autoloader)
+  - AbstractAutoloader (Potter\Autoload\Autoloader)
+    - ClosureAutloaderInterface (Potter\Autoload\Closure)
+      - AbstractClosureAutoloader (Potter\Autoload\Closure)
+        - ClosureAutoloaderTrait (Potter\Autoload\Closure)
+          - **CallableAutoloader** (Potter\Autoload\Closure)
+          - **ClosureAutoloader** (Potter\Autoload\Closure)
+    - Psr4AutoloaderInterface (Potter\Autoload\Psr4)
+      - AbstractPsr4Autoloader (Potter\Autoload\Psr4)
+        - **Psr4Autoloader** (Potter\Autoload\Psr4)
