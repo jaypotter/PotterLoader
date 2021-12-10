@@ -10,6 +10,9 @@
             "email": "jay@jaypotter.ca"
         }
     ],
+    "autoload": {
+        "files": ["Potter/Autoload/PotterLoader.php"]
+    },
     "require": {
         "php": "^8.0"
     }
