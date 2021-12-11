@@ -11,7 +11,7 @@
         }
     ],
     "autoload": {
-        "files": ["Potter/Autoload/PotterLoader.php"]
+        "psr-4": {"Potter\\": "Potter/"}
     },
     "require": {
         "php": "^8.0"
