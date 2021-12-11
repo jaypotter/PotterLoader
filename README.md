@@ -18,8 +18,7 @@ composer require potter/loader
 ```php
 <?php
 
-require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
-require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Potter\Autoload\{
     Psr4\Psr4Autoloader,
@@ -40,7 +39,7 @@ new MyNamespace\UserClass;
 
 namespace MyNamespace;
 
-require_once __DIR__ . '/Potter/Autoload/Psr4/AbstractPsr4Autoloader.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Potter\Autoload\Psr4\AbstractPsr4Autoloader;
 
@@ -58,10 +57,10 @@ final class MyNamespaceAutoloader extends AbstractPsr4Autoloader
 ```php
 <?php
 
-require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
 use Potter\Autoload\SplAutoloadRegister;
 
-require_once __DIR__ . '/MyNamespaceAutoloader.php';
 use MyNamespace\MyNamespaceAutoloader;
 
 (new SplAutoloadRegister)->register(new MyNamespaceAutoloader);
