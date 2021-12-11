@@ -18,8 +18,7 @@ composer require potter/loader
 ```php
 <?php
 
-require_once __DIR__ . '/Potter/Autoload/Psr4/Psr4Autoloader.php';
-require_once __DIR__ . '/Potter/Autoload/SplAutoloadRegister.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Potter\Autoload\{
     Psr4\Psr4Autoloader,
